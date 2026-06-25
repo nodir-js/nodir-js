@@ -153,6 +153,31 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
+/** Radar ratings per discipline (0–99), derived from the top-3 years in each group. */
+const RADAR_ORDER = [
+  { title: "Languages & Core", short: "Core" },
+  { title: "Front-end & Mobile", short: "Frontend" },
+  { title: "Back-end & APIs", short: "Backend" },
+  { title: "Data", short: "Data" },
+  { title: "Cloud & DevOps", short: "Cloud" },
+  { title: "Leadership & Craft", short: "Leadership" },
+] as const;
+
+export type RadarAxis = { label: string; short: string; rating: number };
+
+export const skillRadar: RadarAxis[] = RADAR_ORDER.map(({ title, short }) => {
+  const group = skillGroups.find((g) => g.title === title);
+  const top = [...(group?.skills ?? [])]
+    .sort((a, b) => b.years - a.years)
+    .slice(0, 3);
+  const avg = top.reduce((sum, s) => sum + s.years, 0) / (top.length || 1);
+  return { label: title, short, rating: Math.round((avg / 8) * 99) };
+});
+
+export const skillOverall = Math.round(
+  skillRadar.reduce((sum, r) => sum + r.rating, 0) / skillRadar.length,
+);
+
 /* ----------------------------------------------------------------------------
    Projects (detail pages live at /work/[slug])
 ---------------------------------------------------------------------------- */
@@ -332,6 +357,49 @@ export const projects: Project[] = [
 export const featuredProjects = projects
   .filter((p) => p.featured)
   .sort((a, b) => b.sort - a.sort);
+
+/* ----------------------------------------------------------------------------
+   Side projects — independent products, linked out (no case-study page)
+---------------------------------------------------------------------------- */
+export type SideProject = {
+  name: string;
+  tagline: string;
+  description: string;
+  url: string;
+  cover: ProjectImage;
+  stack: string[];
+};
+
+export const sideProjects: SideProject[] = [
+  {
+    name: "Birmarket",
+    tagline: "Uzbekistan's online store — thousands of products at the best prices.",
+    description:
+      "A full e-commerce marketplace with catalog browsing, search, categories and product listings, serving shoppers across Uzbekistan.",
+    url: "https://birmarket.uz/",
+    cover: {
+      src: "/projects/birmarket/cover.png",
+      w: 1440,
+      h: 1024,
+      alt: "Birmarket — Uzbekistan online marketplace",
+    },
+    stack: ["Next.js", "React", "TypeScript", "Vercel"],
+  },
+  {
+    name: "East Explorers",
+    tagline: "Expert tours & travel services across Central Asia.",
+    description:
+      "A multilingual travel platform for curated tours, hotel bookings, transport and guides in Uzbekistan and Central Asia, backed by 10+ years of on-the-ground experience.",
+    url: "https://www.eastexplorers.com/en",
+    cover: {
+      src: "/projects/eastexplorers/cover.jpg",
+      w: 1280,
+      h: 655,
+      alt: "East Explorers — Central Asia travel platform",
+    },
+    stack: ["Next.js", "React", "TypeScript", "i18n", "Vercel"],
+  },
+];
 
 export const projectBySlug = (slug: string) =>
   projects.find((p) => p.slug === slug);

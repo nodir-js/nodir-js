@@ -8,7 +8,7 @@ export function Writing() {
     <section id="writing" className="scroll-mt-24 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeader
-          index="05"
+          index="06"
           kicker="Writing"
           title="Notes from the build."
           intro="Occasional deep dives on the engineering problems I find interesting."

@@ -19,12 +19,15 @@ const marquee = [
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="grid-faint absolute inset-0 opacity-60" aria-hidden />
-      <div
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full opacity-20 blur-[120px]"
-        style={{ background: "radial-gradient(circle, #c9f24a, transparent 70%)" }}
-        aria-hidden
-      />
+      {/* Grid + glow are scoped to this wrapper so the pattern ends exactly
+          at the marquee's top edge (no grid lines cutting through the band). */}
+      <div className="relative">
+        <div className="grid-faint absolute inset-0 opacity-60" aria-hidden />
+        <div
+          className="pointer-events-none absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full opacity-20 blur-[120px]"
+          style={{ background: "radial-gradient(circle, #c9f24a, transparent 70%)" }}
+          aria-hidden
+        />
 
       <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-32 sm:px-8 sm:pt-40">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -77,9 +80,10 @@ export function Hero() {
             </div>
           ))}
         </dl>
+        </div>
       </div>
 
-      {/* Tech marquee */}
+      {/* Tech marquee — clean band directly under the pattern */}
       <div className="relative border-y border-line py-4">
         <div className="flex w-max marquee-track gap-10 whitespace-nowrap pl-10">
           {[...marquee, ...marquee].map((t, i) => (

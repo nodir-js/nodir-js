@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-24 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <SectionHeader index="04" kicker="About" title="Engineer first. Builder always." />
+        <SectionHeader index="05" kicker="About" title="Engineer first. Builder always." />
 
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
           <Reveal>

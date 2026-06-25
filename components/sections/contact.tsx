@@ -27,7 +27,7 @@ export function Contact() {
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="flex items-center gap-4">
-          <span className="font-mono text-xs text-lime">06</span>
+          <span className="font-mono text-xs text-lime">07</span>
           <span className="h-px flex-1 bg-line" />
           <span className="kicker">Contact</span>
         </div>

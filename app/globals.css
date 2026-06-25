@@ -154,6 +154,28 @@ body {
   }
 }
 
+/* Skill radar entrance */
+@keyframes radar-pop {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.radar-pop {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: radar-pop 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .radar-pop {
+    animation: none;
+  }
+}
+
 /* Mobile menu entry */
 @keyframes menu-in {
   from {

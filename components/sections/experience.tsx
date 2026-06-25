@@ -9,7 +9,7 @@ export function Experience() {
     <section id="experience" className="scroll-mt-24 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeader
-          index="02"
+          index="03"
           kicker="Career"
           title={
             <>
