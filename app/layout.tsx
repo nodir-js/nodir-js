@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { profile } from "@/lib/data";
 import { siteUrl } from "@/lib/site";
+
+const GA_ID = "G-H2VZKMQVSQ";
 
 const display = Fraunces({
   variable: "--font-display",
@@ -101,6 +104,7 @@ export default function RootLayout({
       className={`${display.variable} ${sans.variable} ${mono.variable} antialiased`}
     >
       <body className="grain min-h-dvh">{children}</body>
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }
