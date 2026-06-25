@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Nodirbek Sharipov
 
-## Getting Started
+Software engineer from Uzbekistan. Specializes in front-end web and mobile development, excels in delivering top-notch solutions. Work experience includes designing mobile and web apps at CaliberX, enhancing UI/UX at Epam Systems, and building a voice-based social network at RizeTogether. Adaptable, fast learner, a valuable addition to any team.
 
-First, run the development server:
+My goal is to have a purpose and be part of teams that build valuable products
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### The tech stack I'm in
+ - Stacks: TypeScript, React, ReactNative, Context API, Redux, ES6+, NodeJS, JWT, REST APIs CMS: Contentful, Strapi,
+ - DB: MySQL, MS SQL Server
+ - Tools: Asana, Jira, Slack, Github, Git, Gitlab, Figma, Heap, Sentry, Postman, Android Studio, Xcode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Awesome things I worked on:
+ - [CaliberX](https://www.caliberexchange.com/) - Powering end-to-end alternative investing experiences. Our APIs connect your customers to top private equity and venture capital funds while unlocking new recurring revenue streams.
+ - [Poolit Web](https://www.poolit.com/)
+ - [Poolit Mobile](https://apps.apple.com/uz/app/poolit-access-alt-investments/id1621546981) - Poolit delivers exclusive access to premium private equity and venture capital investments, from top fund managers. Accredited investors can invest with low minimums.
+ - [Pearson+](https://www.pearson.com/en-us/pearsonplus.html) - Your eTextbooks, study videos, and more — all in one place
+ - [Rize](https://play.google.com/store/apps/details?id=com.joinrize.rize) - Rize is where founders help each other win faster through honest 1:1 interactions that are light enough to fit around the chaos.
+ - [sdb.uz](https://sdb.uz/) - A chain of home appliances and electronics stores at affordable prices
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+#### I write blogs sometimes:
 
-To learn more about Next.js, take a look at the following resources:
+ - dev.to: [nodir_dev](https://dev.to/nodir_dev)
+ - medium: [nodir_dev](https://medium.com/@nodir_dev)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Contacts:
+ - E-mail: [nodir.dev.js@gmail.com](mailto:nodir.dev.js@gmail.com)
+ - Phone: [+998(90)-557-2240](tel:+998905572240)
+ - LinkedIn: [nodirdev](https://www.linkedin.com/in/nodirdev/)
+ - GitHub: [@nodir-js](https://github.com/nodir-js)
+ - Twitter: [@nodir_dev](https://twitter.com/nodir_dev)
+ - Telegram: [@nodirbek_sharipov](https://t.me/nodirbek_sharipov)
